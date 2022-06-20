@@ -538,6 +538,7 @@ body {
 }
 
 
+
 .foot-title {
     margin-left: 70px;
 }
@@ -592,13 +593,15 @@ body {
     fill: var(--background-white);
 }
 
-
-.sharing-field {
-    position: relative;
-    margin-left: 93px;
+.sharing-form {
+    margin-left: auto;
 }
 
-.sharing-label {
+.sharing-field {
+   display: flex;
+}
+
+.sharing-title {
     display: block;
     font-weight: 700;
     font-size: 14px;
@@ -609,9 +612,12 @@ body {
 }
 
 .sharing-input {
-    position: absolute;
     width: 358px;
     height: 50px;
+    color: var(--background-white);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -619,6 +625,7 @@ body {
     padding-left: 16px;
     outline: none;
     transition: border-color 250ms var(--time-transition);
+
 }
 
 .sharing-input::placeholder {
@@ -635,7 +642,6 @@ body {
 }
 
 .btn-sharing {
-    position: absolute;
     margin-left: 370px;
     width: 200px;
     height: 50px;
@@ -650,6 +656,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+    margin-left: 12px;
     letter-spacing: 0.06em;
     color: var(--background-white);
     padding-left: 29px;
@@ -887,6 +894,12 @@ body {
     margin-bottom: 10px;
 }
 
+.modal-field:last-child {
+    margin-bottom: 0px;
+}
+
+
+
 .modal-input:focus,
 .modal-input:hover {
     border-color: var(--accent-color);
@@ -993,15 +1006,16 @@ body {
     align-items: center;
     width: 200px;
     height: 50px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #FFFFFF;
     border: none;
     margin-top: 30px;
-    margin-right: 123px;
-    margin-left: 125px;
-    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
 
     transition: 250ms var(--time-transition);
